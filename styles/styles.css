@@ -1,21 +1,27 @@
+:root {
+  --white-color: white;
+  --darkblue-color: darkblue;
+  --black-color: black;
+  --grey-color: grey;
+}
 nav {
-    background-color: darkblue;
+    background-color: var(--darkblue-color);
     padding: 10px;
   }
 nav a {
-    color: white;
+    color: var(--white-color);
     display: block;
     padding: 20px;
   }
 h1 {
-    color: darkblue;
+    color: var(--darkblue-color);
   }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--grey-color);
 }
 
 main {
