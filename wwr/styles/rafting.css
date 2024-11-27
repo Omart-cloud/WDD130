@@ -104,7 +104,7 @@ footer p {
 }
 
 .social_links a img {
-    width: 24px; /* Icon size */
-    margin: 0 10px; /* Space between icons */
+    width: 10px; /* Icon size */
+    margin: 0px; /* Space between icons */
     vertical-align: middle; /* Align icons with text */
 }
