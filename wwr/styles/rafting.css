@@ -1,8 +1,9 @@
-/* Reset some default styling */
 :root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --main-background: #6C8EAD;
+    --header-background: #FF3C38;
+    --footer-background: #4CAF50;
+    --text-color: #333;
+    --section-heading-color: #57886C;
 }
 
 body {
@@ -39,6 +40,8 @@ nav a:hover {
 
 /* Hero section styling */
 .hero img {
+    position: relative;
+    float: right;
     display: block;
     width: 100%;
     height: auto; /* Make image responsive */
@@ -67,7 +70,6 @@ article {
 }
 
 article img {
-    float: right;
     max-width: 100%; /* Responsive image */
     border-radius: 8px; /* Rounded corners */
 }
@@ -84,7 +86,7 @@ h2 {
 
 /* Image gallery styling */
 section img {
-    width: 200%;
+    width: 100%;
     max-width: 300px; /* Control maximum width */
     border-radius: 8px; /* Rounded corners */
     margin: 10px; /* Space between images */
@@ -104,6 +106,7 @@ footer p {
 }
 
 .social_links a img {
+    text-decoration: none;
     width: 10px; /* Icon size */
     margin: 0px; /* Space between icons */
     vertical-align: middle; /* Align icons with text */
