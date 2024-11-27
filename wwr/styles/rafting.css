@@ -38,14 +38,18 @@ nav a:hover {
     text-decoration: none; /* Underline on hover */
 }
 
+.hero {
+    position: relative; /* Add this line */
+}
+
 /* Hero section styling */
 .hero img {
-    position: relative;
     float: right;
     display: block;
     width: 100%;
     height: auto; /* Make image responsive */
 }
+
 
 /* Main content styling */
 main {
@@ -105,8 +109,11 @@ footer p {
     margin: 10px 0; /* Space around the footer text */
 }
 
+.social_links a {
+    text-decoration: none; /* Apply to the anchor tag */
+}
+
 .social_links a img {
-    text-decoration: none;
     width: 10px; /* Icon size */
     margin: 0px; /* Space between icons */
     vertical-align: middle; /* Align icons with text */
