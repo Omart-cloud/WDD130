@@ -107,5 +107,5 @@ footer {
   color: white;                  /* White text for footer */
   position: relative;            /* Position relative for layering */
   bottom: 0;                     /* Stick to the bottom */
-  margin-top: 20px;              /* Space from above */
+  margin-top: 20px;
 }
