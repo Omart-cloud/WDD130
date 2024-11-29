@@ -1,0 +1,111 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif; /* Sets a basic sans-serif font */
+  line-height: 1.6;              /* Sets a reasonable line height */
+  padding: 20px;                 /* Adds space around the content */
+  background-color: #f4f4f4;     /* Sets a light gray background color */
+}
+
+/* Header Styles */
+header {
+  max-width: 840px;
+  margin: 0 auto;
+  background: #007BFF;           /* Sets header background color */
+  color: #fff;                   /* Text color in the header */
+  padding: 10px 0;               /* Top and bottom padding */
+  text-align: center;            /* Center the header text */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; /* Shorthand for white /*
+}
+
+nav a:hover {
+  background: #0056b3;           /* Change background on hover */
+}
+
+/* Main Content Styles */
+main {
+  max-width: 840px;
+  margin: 0 auto;
+  background: #fff;              /* White background for main content */
+  padding: 20px;                 /* Padding inside the main content */
+  margin: 20px 0;                /* Margin around the main content */
+  border-radius: 8px;            /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+/* Image Styles */
+img {
+  display: block;                /* Makes images block elements */
+  margin: 10px auto;            /* Centers images */
+  border-radius: 5px;           /* Slightly rounded corners for images */
+}
+
+/* List Styles */
+.box {
+  list-style-type: none;         /* Removes bullet points from lists */
+  padding: 0;                    /* Removes padding */
+}
+
+.box li {
+  margin-bottom: 10px;           /* Spacing between list items */
+}
+
+/* Aside Styles */
+aside {
+  background: #e9ecef;           /* Light gray background for aside */
+  padding: 15px;                 /* Padding in aside */
+  border-radius: 8px;            /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Footer Styles */
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;            /* Center text in footer */
+  padding: 20px 0;              /* Padding for top and bottom */
+  background-color: #007BFF;    /* Same blue as header for consistency */
+  color: white;                  /* White text for footer */
+  position: relative;            /* Position relative for layering */
+  bottom: 0;                     /* Stick to the bottom */
+  margin-top: 20px;              /* Space from above */
+}
