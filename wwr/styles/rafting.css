@@ -14,29 +14,45 @@ body {
 
 /* Header styling */
 header {
-    background-color: #FF3C38; /* Green background for the header */
-    padding: 20px;
-    text-align: center;
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
 }
 
 header img {
-    max-width: 200px; /* Responsive logo size */
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
 }
 
 nav {
-    margin-top: 15px;
+    text-align: right;
 }
 
-nav a {
-    color: #87A684;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 700;
+.navigation {
+	display: flex;
+	list-style: none;
 }
 
-nav a:hover {
-    text-decoration: none; /* Underline on hover */
+.navigation li {
+    flex: 1 1 100%;
 }
+
+.navigation a {
+	display: block;
+	color: #87A684;
+	padding: 20px;
+	text-decoration: none;
+}
+
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
 
 .hero {
     position: relative; /* Add this line */
@@ -60,6 +76,7 @@ h1 {
     position: absolute;
     text-align: center;
     font-family: 'Merriweather', serif; /* Different font for headings */
+    font-size: 2rem;
     margin: 20px 0;
 }
 
@@ -74,6 +91,7 @@ article {
 }
 
 article img {
+    display: wrap-flex;
     max-width: 100%; /* Responsive image */
     border-radius: 8px; /* Rounded corners */
 }
@@ -88,14 +106,27 @@ h2 {
     color: #57886C; /* Green color for section headings */
 }
 
-/* Image gallery styling */
-section img {
-    width: 100%;
-    max-width: 300px; /* Control maximum width */
-    border-radius: 8px; /* Rounded corners */
-    margin: 10px; /* Space between images */
-    display: inline-block; /* Align images in a row */
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
 }
+  
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+  
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}  
 
 /* Footer styling */
 footer {
