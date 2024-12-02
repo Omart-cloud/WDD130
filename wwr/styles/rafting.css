@@ -54,19 +54,6 @@ nav {
 	font-weight: 700;
 	text-decoration: underline;
 
-.hero {
-    position: relative; /* Add this line */
-}
-
-/* Hero section styling */
-.hero img {
-    float: right;
-    display: block;
-    width: 100%;
-    height: auto; /* Make image responsive */
-}
-
-
 /* Main content styling */
 main {
     padding: 20px;
