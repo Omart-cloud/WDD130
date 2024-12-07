@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-form</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Mary Taiwo Omotoso | Quiz form</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="quiz-item">
+                    <label for="q1">What does the acronym HTML stand for?</label>
+                    <input type="text" id="q1" name="q1" placeholder="Your answer here">
+                </div>
+                <div class="quiz-item">
+                    <label for="q2">What element follows the head element in HTML?</label>
+                    <textarea id="q2" name="q2" placeholder="Your answer here"></textarea>
+                </div>
+                <div class="quiz-item">
+                    <label for="q3">Which of these is correct?</label>
+                    <select id="q3" name="q3">
+                        <option value="DOCTYPE">&lt;!DOCTYPE&gt;</option>
+                        <option value="DOCTYPE_HTML">DOCTYPE HTML</option>
+                        <option value="DOCTYPE_HTML_2">&lt;DOCTYPE HTML&gt;</option>
+                        <option value="DOCTYPE_html">&lt;!DOCTYPE html&gt;</option>
+                    </select>
+                </div>
+                <div class="quiz-item">
+                    <label for="q4">How many times does the &lt;!DOCTYPE&gt; appear in HTML?</label>
+                    <input type="number" id="q4" name="q4" placeholder="Enter a number">
+                </div>
+            </fieldset>
+            <button type="submit">Submit quiz</button>
+        </form>
+    </main>
+</body>
+</html>
