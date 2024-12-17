@@ -1,0 +1,501 @@
+/* General Reset */
+* {
+    --primary-color: #9653c0;
+    --secondary-color: #68CDDD;
+    --accent1-color: #4CAF50;
+    --accent2-color: #f4f2f2;
+    --background-color: #ee8244;
+    --heading-font: 'Merriweather', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1, h2 {
+    font-family: 'Merriweather', serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #fff; /* Optional: Adds a bottom border for separation */
+  }
+  
+  header .logo {
+    flex: 1;
+  }
+  
+  header .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  nav {
+    flex: 3; /* Adjusted to allow nav items to take up more space */
+  }
+  
+  nav .navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  nav .navigation li {
+    margin: 0 15px;
+  }
+  
+  nav .navigation a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  
+  nav .navigation a:hover {
+    background-color: #005199; /* Slightly darker hover effect */
+    border-radius: 4px;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* index page styling */
+  .newsletter {
+    background-color: #0099cc;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .newsletter label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+  }
+  
+  .newsletter input[type="text"],
+  .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
+  }
+  
+  .newsletter button:hover {
+    background-color: #002244;
+  }
+  
+  .cta {
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  
+  .cta .cta-link {
+    font-size: 1.3em;
+    padding: 12px 30px;
+    background-color: #003366;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  .cta .cta-link:hover {
+    background-color: #002244;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    font-size: 1.1em;
+  }
+  /* end of index page styling */
+
+  /*about us page styling */
+  .about-main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  article img {
+    width: 40%;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  article p {
+    width: 55%;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    font-size: 2.2em;
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+  
+  section {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  figure {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  figcaption {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  /* end of about us page styling */
+
+   /* Layout for the trips main */
+/* Set up the main element to be a 3-column grid */
+.trips-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+  /* Styling each trip info section */
+.trip-info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(48, 20, 229, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-info img {
+    width: 100%; /* Ensure the images fill the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.trip-info p {
+    font-size: 1rem;
+    color: #555;
+}
+ /* Table Styling (For trips) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2E8B57; /* Green header */
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #FF8C00;
+}
+/* end of trips page styling */
+
+
+  /* Main Contact Section */
+  .contact-main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    margin-top: 0;
+  }
+  
+  .contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .company-details {
+    margin-bottom: 30px;
+  }
+  
+  .company-details address {
+    font-style: normal;
+  }
+  
+  .company-details address p {
+    margin: 10px 0;
+  }
+  
+  .google-map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .employee-profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .employee {
+    text-align: center;
+  }
+  
+  .employee img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .employee h4 {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  .contact-form h3 {
+    margin-top: 0;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form .radio-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+  }
+  
+  .contact-form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005599;
+  }
+
+  /* end of contact us page styling */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  footer .social_links {
+    margin: 20px 0;
+  }
+  
+  footer .social_links a {
+    margin: 0 10px;
+  }
+  
+  footer .social_links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    article img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    article p {
+      width: 100%;
+    }
+  
+    figure {
+      width: 45%;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  }
+  

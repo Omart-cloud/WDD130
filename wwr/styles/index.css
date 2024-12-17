@@ -1,0 +1,232 @@
+/* General Reset */
+
+* {
+    --primary-color: #9653c0;
+    --secondary-color: #68CDDD;
+    --accent1-color: #4CAF50;
+    --accent2-color: #f4f2f2;
+    --background-color: #ee8244;
+    --heading-font: 'Merriweather', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #fff; /* Optional: Adds a bottom border for separation */
+  }
+  
+  header .logo {
+    flex: 1;
+  }
+  
+  header .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  nav {
+    flex: 3; /* Adjusted to allow nav items to take up more space */
+  }
+  
+  nav .navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  nav .navigation li {
+    margin: 0 15px;
+  }
+  
+  nav .navigation a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  
+  nav .navigation a:hover {
+    background-color: #005199; /* Slightly darker hover effect */
+    border-radius: 4px;
+  }
+  
+  .newsletter {
+    background-color: #0099cc;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .newsletter label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+  }
+  
+  .newsletter input[type="text"],
+  .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
+  }
+  
+  .newsletter button:hover {
+    background-color: #002244;
+  }
+  
+  .cta {
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  
+  .cta .cta-link {
+    font-size: 1.3em;
+    padding: 12px 30px;
+    background-color: #003366;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  .cta .cta-link:hover {
+    background-color: #002244;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    font-size: 1.1em;
+  }
+  
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  footer .social_links {
+    margin: 20px 0;
+  }
+  
+  footer .social_links a {
+    margin: 0 10px;
+  }
+  
+  footer .social_links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .newsletter h2 {
+      font-size: 1.8em;
+    }
+  
+    .cta h2 {
+      font-size: 2em;
+    }
+  
+    .cta p {
+      font-size: 1.2em;
+    }
+  }
+  

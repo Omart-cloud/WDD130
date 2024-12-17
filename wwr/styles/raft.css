@@ -1,0 +1,433 @@
+/* General Reset and Styling */
+* {
+    --primary-color: #9653c0;
+    --secondary-color: #68CDDD;
+    --accent1-color: #4CAF50;
+    --accent2-color: #f4f2f2;
+    --background-color: #ee8244;
+    --heading-font: 'Merriweather', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    display: flex;
+}
+
+header nav ul li a {
+    color: var(--background-color);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+header nav ul li a:hover {
+    color: var(--accent1-color);
+}
+
+/* Hero Section */
+.about-main .hero {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/background_image.webp") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article img{
+    display: grid;
+    grid-template-columns: auto;
+    width: 200px;
+    float: left;
+}
+
+article h2{
+    color: var(--background-color);
+}
+
+.article-content p {
+    position: absolute;
+    top: 100px;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    left: 5%;
+    font-size: 15px;
+}
+
+.hero .cta-btn {
+    background-color: var(--background-color); /* Gold color for CTA */
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .cta-btn:hover {
+    background-color: #FF8C00; /* Darker gold */
+}
+
+/* Image Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #006400; /* Dark Green footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social_links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social_links img {
+    width: 25px; /* Reduced icon size */
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+footer .social_links img:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+.contact-main {
+    background-color: var(--background-color); /* Light grey background for Contact */
+    padding: 40px;
+}
+
+.about-main,
+.contact-main {
+    color: var(--accent2-color);
+}
+
+/* Social Links in Footer */
+.social_links {
+    margin-top: 15px;
+}
+
+/* Layout for the trips main */
+/* Set up the main element to be a 3-column grid */
+.trips-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+/* Styling each trip info section */
+.trip-info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(48, 20, 229, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-info img {
+    width: 100%; /* Ensure the images fill the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.trip-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive design: Stack the columns on smaller screens */
+@media screen and (max-width: 768px) {
+    .trips-main {
+        grid-template-columns: 1fr; /* 1 column layout for smaller screens */
+    }
+}
+
+/* Table Styling (For trips) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2E8B57; /* Green header */
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #FF8C00;
+}
+
+/* Newsletter Form */
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.newsletter button {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #006400;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #0077ff;
+    color: #2E8B57;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #006400;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.company-details h3 {
+    margin-top: 20px;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+.employee {
+    color: var(--background-color);
+    margin-bottom: 5rem;
+    padding: 4px 2rem;
+    background-color: var(--accent1-color);
+}
+
+.employee h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employee img {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.employee figcaption{
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.employee-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee figure{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Flex Layout for About Page */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem ;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: #f5f5f5;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.history-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.history-content p{
+    padding: 1px;
+    margin: 1rem;
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--background-color);
+
+}
+
+.history-image img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+}
+
+figure {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+figure figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Stack grid items on smaller screens */
+    }
+
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+}
