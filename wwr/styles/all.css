@@ -54,6 +54,7 @@
   
   nav .navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
   }
@@ -203,20 +204,21 @@
   }
   
   article {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
   }
   
   article img {
-    width: 40%;
+    float: left;
+    width: 20%;
     border-radius: 8px;
     margin-right: 20px;
   }
   
   article p {
-    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     font-size: 1.1em;
     line-height: 1.6;
   }
