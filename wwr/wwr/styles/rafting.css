@@ -22,6 +22,10 @@ h1, h2 {
     color: brown;
 }
 
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
 .hero {
     position: relative;
     border: 1px solid #ccc;
@@ -98,6 +102,7 @@ footer {
     background-color: antiquewhite;
     border-top: 2px solid #ccc;
     padding: 20px 0;
+    margin-top: 20px;
 }
 
 footer p {
@@ -127,7 +132,6 @@ footer .wireframe {
 }
 
 footer a {
-    text-decoration: none;
     color: var(--primary-color); /* You can change the link color */
 }
 
@@ -219,11 +223,18 @@ section .history p {
 
 label{
     display: block;
+    margin: 5px;
     
 }
 
 fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-item {
+    margin: 5px 0;
 }
 
 figure{
