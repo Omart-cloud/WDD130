@@ -1,121 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Contact Us - White Water Rafting</title>
-    <meta name="description" content="Contact us today for your exceptional experience in rafting adventures, we ensure safety practices, as we are committed to providing you the best white water rafting experience." >
-    <meta name="author" content="Mary Taiwo Omotoso" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" >
-    <link rel="stylesheet" href="./styles/all.css" >
-  </head>
-
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mary's Contact Page">
+    <meta name="author" content="Mary Taiwo Omotoso">
+    <title>Contact Us - Willard Water Rafting Company</title>
+    <script>
+        function showMessage() {
+            alert("You have submitted your message successfully");
+        }
+    </script>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
     <header>
-      <div class="logo">
-        <img src="./images/Rapids_logo.jpg" alt="Rapids Logo" >
-      </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="trips.html">Trips</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+        <img src="../images/Rapids_logo.jpg" alt="Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
+    <main>
+    <div class="company-information">
+     <h1>Company Information:</h1>
+     <p><strong>Address:</strong> 3, AB Suberu, Alarere, Iwo road, Ibadan, Nigeria.</p>
+     <p><strong>Phone:</strong> +2349059039114</p>
+     <p><strong>Email:</strong> <a href="mailto:omartprncx@gmail.com">omartprncx@gmail.com</a></p> <!-- Corrected closing of the strong tag -->
+     <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sng!4v1733721697382!5m2!1sen!2sng!6m8!1m7!1s30ikz66Qs4xoPDmYSGPScw!2m2!1d7.398651506954246!2d3.943580775559992!3f58.61301114495798!4f-18.644198410665638!5f0.7820865974627469" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-    <main class="contact-main">
-      <!-- Add h1 for SEO purposes -->
-      <section class="contact-info">
-        <h1>Contact Us</h1>
-        <p>We are happy to assist you! You can reach us through the following ways:</p>
+    <div class="happy-employees">
+        <figure>
+            <img src="../images/Customer_care.jpg" alt="">
+            <figcaption>Arey Smith - Customer Service</figcaption>
+        </figure>
 
-        <div class="company-details">
-          <h2>Company Information</h2>
-          <address>
-            <p><strong>Address:</strong> 3, AB Suberu, Alarere, Iwo road, Ibadan, Nigeria.</p>
-            <p><strong>Phone:</strong> +2349059039114</p>
-            <p><strong>Email:</strong> <a href="mailto:omartprncx@gmail.com">info@raftingadventures.com</a></p>
-          </address>
-        </div>
+        <figure>
+            <img src="../images/Trip_Officer.jpg" alt="">
+            <figcaption>Kenneth May - Trip Coordinator</figcaption>
+        </figure>
 
-        <!-- Ensure the Google Map div is closed properly and remove inline style -->
-        <div class="google-map">
-          <h3>Find Us on the Map</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sng!4v1733721697382!5m2!1sen!2sng!6m8!1m7!1s30ikz66Qs4xoPDmYSGPScw!2m2!1d7.398651506954246!2d3.943580775559992!3f58.61301114495798!4f-18.644198410665638!5f0.7820865974627469" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div> <!-- Closing div for google-map -->
-
-        <!-- Employee Profiles -->
-        <div class="employee-profile">
-          <div class="employee">
-            <!-- Rename image files or replace spaces with '%20' -->
-            <img src="./images/Customer_care.jpg" alt="Employee 1" id="employee-1" >
-            <h4>Arey Smith - Customer Service</h4>
-          </div>
-          <div class="employee">
-            <img src="./images/Trip_officer.jpg" alt="Employee 2" id="employee-2" >
-            <h4>Kenneth May - Trip Coordinator</h4>
-          </div>
-          <div class="employee">
-            <img src="./images/Safety_officer.jpg" alt="Employee 3" id="employee-3" >
-            <h4>Tyler Abraham - Safety Officer</h4>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form">
-          <h5>Send Us a Message</h5>
-          <form action="submit_form.php" method="POST">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required >
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required >
-
-            <label>Purpose of Your Message</label>
-            <div class="radio-group">
-              <label>
-                <input type="radio" name="message_type" value="General Inquiry" required > General Inquiry
-              </label>
-              <label>
-                <input type="radio" name="message_type" value="Reservation Question" required > Reservation Question
-              </label>
-              <label>
-                <input type="radio" name="message_type" value="Website Suggestion" required > Website Suggestion
-              </label>
+        <figure>
+            <img src="../images/Safety_Officer.jpg" alt="">
+            <figcaption>Tyler Abraham - Safety Officer</figcaption>
+        </figure>
+    </div>
+     <form onsubmit="showMessage(); return false;">
+        <fieldset>
+            <legend>User Information</legend>
+            <div class="form-item"> 
+                <label for="fullname">Full Name:</label>
+                <Input type="text" id="fullname" name="fullname">
             </div>
-
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <label>
-              <input type="checkbox" name="subscribe" value="newsletter" > Please subscribe me to the monthly newsletter
-            </label><br><br>
-
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section> <!-- Closing tag for section -->
+            <div class="form-item column2"> <label for="Email">Email</label> 
+                <input type="email" id="Email" name="Email">
+            </div>
+            <label for="Purpose">Purpose of Message</label>
+            <input id="Purpose">
+             <label><input type="radio" name="Purpose" value="General Inquiry">General Inquiry</label>
+             <label><input type="radio" name="Purpose" value="Reservation Question">Reservation Question</label>
+             <label><input type="radio" name="Purpose" value="Website Suggestion">Website Suggestion</label>
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" rows="4"></textarea>
+            <label><input type="checkbox" name="subscribe" value="yes" id="subscribe">Please subscribe me to the monthly newsletter</label>
+            <label><button type="submit" id="submit">SUBMIT</button></label>
+        </fieldset>
+       </form> 
     </main>
-
     <footer>
-      <p>&copy; 2024 White Water Rafting by Mary Taiwo Omotoso</p>
-      <nav class="social_links">
-        <a href="https://www.facebook.com/">
-          <img src="./images/facebook.svg" alt="Facebook logo" >
-        </a>
-        <a href="https://twitter.com">
-          <img src="./images/twitter.svg" alt="Twitter logo" >
-        </a>
-        <a href="https://instagram.com">
-          <img src="./images/instagram.svg" alt="Instagram logo" >
-        </a>
-      </nav>
-      <!-- Link to Contact Us Wireframe Image -->
-      <p><a href="./images/Contact_Us_Page_wireframe.jpg" target="_blank">View Contact Us Wireframe</a></p>
+        <p>&copy;2024 🌲 Willard Water Rafting Company 🌲 Mary Taiwo Omotoso</p>
+        <nav class="socialinks">
+            <a href="https://www.facebook.com/">
+                <img src="../images/facebook.svg" alt="Facebook logo" >
+              </a>
+              <a href="https://twitter.com">
+                <img src="../images/twitter.svg" alt="Twitter logo" >
+              </a>
+              <a href="https://instagram.com">
+                <img src="../images/instagram.svg" alt="Instagram logo" >
+              </a>
+        </nav>
+        <a href="../images/CONTACT_WIREFRAME.png">Contact Us - Wireframe</a>
     </footer>
-  </body>
+
+</body>
 </html>

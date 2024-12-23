@@ -1,118 +1,136 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Trips - Choose Your Adventure</title>
-    <meta name="description" content="Discover our exciting white water rafting trips. Find the perfect adventure for you and book today!">
-    <link rel="stylesheet" href="styles/all.css">
+    <meta name="description" content="A white water rafting company about page">
+    <meta name="author" content="Mary Taiwo Omotoso">
+    <title>Trips - Willard Water Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="./images/Rapids_logo.jpg" alt="Rapids Logo" >
-        </div>
+        <img src="../images/Rapids_logo.jpg" alt="Logo">
         <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    
     <main>
-        <!-- Trip Descriptions -->
-        <section class="trip-descriptions">
-            <h1>Our Featured Trips</h1>
-            <div class="trip-grid">
-                <!-- Trip 1 -->
-                <div class="trip">
-                    <img src="./images/scenic_explorer.webp" alt="The Rapids Adventure">
-                    <h2>The Rapids Adventure</h2>
-                    <p>Experience the wildest rapids in our exciting full-day adventure for adrenaline seekers.</p>
-                </div>
-                <!-- Trip 2 -->
-                <div class="trip">
-                    <img src="./images/rapids_adventure.webp" alt="The Scenic Explorer">
-                    <h3>The Scenic Explorer</h3>
-                    <p>Enjoy a relaxing rafting trip through beautiful landscapes, perfect for beginners.</p>
-                </div>
-                <!-- Trip 3 -->
-                <div class="trip">
-                    <img src="./images/ultimate_trill.webp" alt="The Ultimate Thrill">
-                    <h3>The Ultimate Thrill</h3>
-                    <p>Get your heart racing with our most intense rapids experience.</p>
-                </div>
-            </div>
-        </section>
+        <div class="trips-hero">
+            <img src="../images/hero_image.webp" alt="Hero Image">
+            <h1>Welcome! Please explore our exciting trips below</h1> 
+        </div>
 
-        <!-- Trips Table -->
-        <section class="trips-table">
-            <h2>Available Trips</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Difficulty</th>
-                        <th>Duration</th>
-                        <th>Price</th>
-                        <th>Season</th>
-                        <th>Age Requirement</th>
-                        <th>Book Now</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>The Rapids Adventure</td>
-                        <td>Advanced</td>
-                        <td>Full Day</td>
-                        <td>$150</td>
-                        <td>Summer</td>
-                        <td>25+</td>
-                        <td><a href="contact.html">Contact</a></td>
-                    </tr>
-                    <tr>
-                        <td>The Scenic Explorer</td>
-                        <td>Easy</td>
-                        <td>3 Hours</td>
-                        <td>$80</td>
-                        <td>Spring, Fall</td>
-                        <td>15+</td>
-                        <td><a href="contact.html">Contact</a></td>
-                    </tr>
-                    <tr>
-                        <td>The Ultimate Thrill</td>
-                        <td>Expert</td>
-                        <td>Half Day</td>
-                        <td>$200</td>
-                        <td>Summer, Fall</td>
-                        <td>35+</td>
-                        <td><a href="contact.html">Contact</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <div class="trips"> 
+          <figure>
+            <img src="../images/background_image.webp" alt="salt lake" width="150">  
+            <figcaption>At Willard Water Rafting Company, rafting is both fun and affordable</figcaption>
+          </figure>
+          <a href="trips.html" class="book-link">Book here</a>
+
+          <figure>
+            <img src="../images/scenic_explorer.webp" alt="temple" width="150"> 
+            <figcaption>We are offering promotional services including family and individual packages.</figcaption>
+          </figure>
+          <a href="trips.html" class="book-link">Book here</a>
+
+          <figure> 
+            <img src="../images/ultimate_trill.webp" alt="calabar" width="150">
+            <figcaption>Special offer for night rafting either with family or with friends</figcaption>
+          </figure>
+          <a href="trips.html" class="book-link">Book here</a>
+
+          <figure>
+            <img src="../images/rapids_adventure.webp" alt="calabar" width="150">
+            <figcaption>At Willard Water Rafting Company, rafting is both fun and affordable</figcaption>
+          </figure>
+          <a href="trips.html" class="book-link">Book here</a>
+        </div>
+
+        <div class="trips-table">
+          <table>
+            <caption>
+              Our available trips
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Trips</th>
+                <th scope="col">Distance</th>
+                <th scope="col">Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Fly</td>
+                <td>22km</td>
+                <td>$5</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Saddling</td>
+                <td>45km</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Cruise</td>
+                <td>29km</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Skidding</td>
+                <td>36km</td>
+                <td>$15</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Fly</td>
+                <td>22km</td>
+                <td>$5</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Saddling</td>
+                <td>45km</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Cruise</td>
+                <td>29km</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Skidding</td>
+                <td>36km</td>
+                <td>$15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          
     </main>
-
-    <Footer>
-            <p>&copy; 2024 White Water Rafting by Mary Taiwo Omotoso</p>
-            <nav class="social_links">
-              <a href="https://www.facebook.com/">
-                <img src="./images/facebook.svg" alt="Facebook logo" >
-              </a>
-              <a href="https://twitter.com">
-                <img src="./images/twitter.svg" alt="Twitter logo" >
-              </a>
-              <a href="https://instagram.com">
-                <img src="./images/instagram.svg" alt="Instagram logo" >
-              </a>
-            </nav>
-            <!-- Link to Contact Us Wireframe Image -->
-            <p><a href="/image/trip-wireframe" target="_blank">View Trip Wireframe</a></p>
+    <footer>
+        <p>&copy;2024 🌲 Willard Water Rafting Company 🌲 Mary Taiwo Omotoso</p>
+        <nav class="socialinks">
+          <a href="https://www.facebook.com/">
+            <img src="../images/facebook.svg" alt="Facebook logo" >
+          </a>
+          <a href="https://twitter.com">
+            <img src="../images/twitter.svg" alt="Twitter logo" >
+          </a>
+          <a href="https://instagram.com">
+            <img src="../images/instagram.svg" alt="Instagram logo" >
+          </a>
+        </nav>
+        <a href="../images/TRIPS_WIREFRAME.png">TRIPS - Wireframe</a>
     </footer>
 
 </body>
